@@ -1,0 +1,10 @@
+/* admin ber menu */
+#wpadminbar > #wp-toolbar #wp-admin-bar-mail-switcher .ab-label {
+	color: #ffff00;
+}
+
+#wpadminbar > #wp-toolbar #wp-admin-bar-mail-switcher .ab-icon:before {
+	content: "\f348";
+	top: 2px;
+	color: #ffff00;
+}
