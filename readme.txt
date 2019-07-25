@@ -2,9 +2,9 @@
 Contributors: pressmaninc, katsunoritakahashipm, hiroshisekiguchi, muraokashotaro, naotoshigenari, kazunao, pmyosuke
 Tags: mail, e-mail, developer, pressman
 Requires at least: 4.7.0
-Tested up to: 4.9.8
+Tested up to: 5.2
 Requires PHP: 7.0.0
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GNU GPL v2 or higher
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,3 +20,5 @@ Switching all mails' "to" recipient from the original to what you specify.
 - first version.
 = 1.0.1 =
 - Fix author name.
+= 1.0.2 =
+- Partially corrected.

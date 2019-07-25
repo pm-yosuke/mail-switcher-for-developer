@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Mail Switcher For Developer
  * Description: Switching all mails' "to" recipient from the original to what you specify. When the plug-in becomes active, the administrator's mail address is registered. If it becomes invalid, it will be deleted from the wp_options.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: PRESSMAN
  * Author URI: https://www.pressman.ne.jp/
  * License: GNU GPL v2 or higher
