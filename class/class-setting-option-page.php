@@ -117,29 +117,26 @@ class Mail_Switcher_For_Developer_Option_Settings {
 				'Please enter your mail address',
 				'error'
 			);
-			return $this->get_saved_mail_address();
-		} else {
 
-			// Validate email addresses
-			$input = str_replace( ["\r\n", "\r", "\n"], "\n", $input );
-			$list  = explode( "\n", $input );
-			$error = false;
-			foreach( $list as $v ) {
-				if ( ! filter_var( $v, FILTER_VALIDATE_EMAIL ) ) {
-					$error = true;
-					break;
-				}
-			}
-			if ( $error ) {
+			return $this->get_saved_mail_address();
+		}
+
+		// Validate email addresses
+		$input = str_replace( [ "\r\n", "\r", "\n" ], "\n", $input );
+		$list  = explode( "\n", $input );
+		foreach ( $list as $v ) {
+			if ( ! filter_var( $v, FILTER_VALIDATE_EMAIL ) ) {
 				add_settings_error(
 					$this->menu_slug,
 					'submit',
 					'Invalid mail address is included.',
 					'error'
 				);
+
 				return $this->get_saved_mail_address();
 			}
-		};
+		}
+
 		return $input;
 	}
 
